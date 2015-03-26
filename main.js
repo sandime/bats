@@ -1,6 +1,24 @@
 /**
  * Created by SHERRI on 3/25/15.
  */
-function FirstCtrl($scope){
-    $scope.data = {message: "bats rise at dawn"};
+/*
+function FirstCtrl($scope) {
+
 }
+
+function SecondCtrl($scope) {
+
+}*/
+// the above no longer works with angular. thanks thinkster. https://thinkster.io/egghead/the-dot
+
+
+
+var app = angular.module('myApp',[]);
+
+app.controller('FirstCtrl', ['$scope', function($scope) {
+this.data.message = "hello";
+
+}]);
+app.controller('SecondCtrl', ['$scope', function($scope) {
+
+}]);
