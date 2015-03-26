@@ -16,7 +16,7 @@ function SecondCtrl($scope) {
 var app = angular.module('myApp',[]);
 
 app.controller('FirstCtrl', ['$scope', function($scope) {
-this.data.message = "hello";
+
 
 }]);
 app.controller('SecondCtrl', ['$scope', function($scope) {
